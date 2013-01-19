@@ -3,14 +3,14 @@
  * Plugin Name: CSS3 Transitions
  * Plugin URI: http://celloexpressions.com/dev/css3-transitions
  * Description: Automatically adds CSS3 transitions to your website/blog and the WordPress admin. Links, etc. get animated transitions between their normal and hover states.
- * Version: 1.0
+ * Version: 1.1
  * Author: Nick Halsey
  * Author URI: http://celloexpressions.com/
- * Tags: css3, transitions, eye candy, ui, effects, smooth, automatic, auto, animate, animations
+ * Tags: css3, transitions, eye candy, ui, ux, effects, smooth, automatic, auto, animate, animations
  * License: GPL
 
 =====================================================================================
-Copyright (C) 2012 Nick Halsey
+Copyright (C) 2013 Nick Halsey
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -38,6 +38,7 @@ function do_css3_transitions(){ ?>
 		hover states defined in the theme (and/or the WP core)
 	*/
 		a, li {
+			/* Unfortunately, it doesn't seem posible to do exclude background-property from all, so just don't use any sprites please... */
 			transition: all ease .3s;
 			-webkit-transition: all ease .3s;
 			-ms-transition: all ease .3s;
@@ -51,12 +52,20 @@ function do_css3_transitions(){ ?>
 			-moz-transition: all ease .5s;
 			-o-transition: all ease .5s;
 		}
-		input, .button, .hndle {
+		input, textarea, button, label, option, select, .button, .hndle {
 			transition: all ease .4s;
 			-webkit-transition: all ease .4s;
 			-ms-transition: all ease .4s;
 			-moz-transition: all ease .4s;
 			-o-transition: all ease .4s;
+		}
+		#wpwrap #nav-menus-frame #menu-management-liquid li {
+		/* transitions mess up the nav menu editor... */
+			transition: none;
+			-webkit-transition: none;
+			-ms-transition: none;
+			-moz-transition: none;
+			-o-transition: none;
 		}
 	</style>	
 <?php }
