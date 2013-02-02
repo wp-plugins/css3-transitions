@@ -3,7 +3,7 @@
  * Plugin Name: CSS3 Transitions
  * Plugin URI: http://celloexpressions.com/dev/css3-transitions
  * Description: Automatically adds CSS3 transitions to your website/blog and the WordPress admin. Links, etc. get animated transitions between their normal and hover states.
- * Version: 1.1
+ * Version: 1.2
  * Author: Nick Halsey
  * Author URI: http://celloexpressions.com/
  * Tags: css3, transitions, eye candy, ui, ux, effects, smooth, automatic, auto, animate, animations
@@ -59,8 +59,10 @@ function do_css3_transitions(){ ?>
 			-moz-transition: all ease .4s;
 			-o-transition: all ease .4s;
 		}
-		#wpwrap #nav-menus-frame #menu-management-liquid li {
-		/* transitions mess up the nav menu editor... */
+		
+		/* transitions mess all of these up in the WordPress Core */
+		#wpwrap #nav-menus-frame #menu-management-liquid li, 
+		.wp-picker-holder a {
 			transition: none;
 			-webkit-transition: none;
 			-ms-transition: none;

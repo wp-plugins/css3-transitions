@@ -3,7 +3,7 @@ Contributors: celloexpressions
 Tags: css3, transitions, eye candy, ui, effects, smooth, automatic, auto, animate, animations
 Requires at least: 3.0
 Tested up to: 3.5
-Stable tag: 1.1
+Stable tag: 1.2
 Description: Automatically adds CSS3 transitions to your website/blog and the WordPress admin. Elements with hover states get animated transitions.
 License: GPLv2
 
@@ -31,16 +31,19 @@ First, make sure you know what the transitions look like (and you need to be usi
 For simplicity's sake, no settings page is included. While there are a few potential options, I don't feel that they would be worth the extra bloat of a settings page. If you would like to make adjustments (such as changing the animation duration), you may do so by editing the plugin's php file. 
 
 == Changelog ==
+= 1.2 =
+* Fixed a bug where transitions were being applied to the WordPress 3.5 color picker
+* Fixed a bug where transitions were being applied to the WordPress nav menu editor drag-and-drop
+
 = 1.1 =
 * Fixed bug that made managing menus in the admin almost unusable because of unneeded transitions.
 * Added targeting for several more elements, mostly form-related
 * Updated readme.
-
 
 = 1.0 =
 * First publically available version of the plugin.
 * Tested with WordPress 3.4 and 3.5. Should be compatible with most versions of WordPress.
 
 == Upgrade Notice ==
-= 1.0 =
-* First public version of plugin
+= 1.2 =
+* Bugfixes in the WordPress admin (color picker & nav menus)
