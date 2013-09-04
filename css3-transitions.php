@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: CSS3 Transitions
- * Plugin URI: http://celloexpressions.com/dev/css3-transitions
+ * Plugin URI: http://celloexpressions.com/plugins/css3-transitions
  * Description: Automatically adds CSS3 transitions to your website/blog and the WordPress admin. Links, etc. get animated transitions between their normal and hover states.
  * Version: 1.3
  * Author: Nick Halsey
