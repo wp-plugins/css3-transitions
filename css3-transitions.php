@@ -3,14 +3,14 @@
  * Plugin Name: CSS3 Transitions
  * Plugin URI: http://celloexpressions.com/plugins/css3-transitions
  * Description: Automatically adds CSS3 transitions to your website/blog and the WordPress admin. Links, etc. get animated transitions between their normal and hover states.
- * Version: 1.3
+ * Version: 1.4
  * Author: Nick Halsey
  * Author URI: http://celloexpressions.com/
  * Tags: css3, transitions, eye candy, ui, ux, effects, smooth, automatic, auto, animate, animations
  * License: GPL
 
 =====================================================================================
-Copyright (C) 2013 Nick Halsey
+Copyright (C) 2014 Nick Halsey
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -29,7 +29,6 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 add_action('wp_head', 'cxnh_css3_transitions');
-add_action('admin_head', 'cxnh_css3_transitions');
 
 function cxnh_css3_transitions(){ ?>
 	<style type="text/css">
@@ -38,7 +37,6 @@ function cxnh_css3_transitions(){ ?>
 		hover states defined in the theme
 	*/
 		a, li {
-			/* Unfortunately, it doesn't seem posible to do exclude background-position from all, so just don't use any sprites */
 			transition: all .18s cubic-bezier(0.64,0.20,0.02,0.35);
 			-webkit-transition: all .18s cubic-bezier(0.64,0.20,0.02,0.35);
 		}
@@ -49,13 +47,6 @@ function cxnh_css3_transitions(){ ?>
 		input, textarea, button, label, option, select, .button, .hndle {
 			transition: all .25s cubic-bezier(0.64,0.20,0.02,0.35);
 			-webkit-transition: all .25s cubic-bezier(0.64,0.20,0.02,0.35);
-		}
-		
-		/* transitions mess all of these up in the WordPress Core */
-		#wpwrap #nav-menus-frame #menu-management-liquid li, 
-		.wp-picker-holder a {
-			transition: none;
-			-webkit-transition: none;
 		}
 	</style>
 <?php }

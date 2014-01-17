@@ -2,13 +2,13 @@
 Contributors: celloexpressions
 Tags: css3, transitions, eye candy, ui, effects, smooth, automatic, auto, animate, animations
 Requires at least: 3.0
-Tested up to: 3.6
+Tested up to: 3.8
 Stable tag: 1.3
-Description: Automatically adds CSS3 transitions to your website/blog and the WordPress admin. Elements with hover/active/focus states get animated transitions.
+Description: Automatically adds CSS3 transitions to your website/blog. Elements with hover/active/focus states get animated transitions.
 License: GPLv2
 
 == Description ==
-This plugin automatically adds CSS3 transitions to your website/blog and the WordPress admin. Links, etc. get animated transitions between their normal and hover states. CSS3 Transitions are supported by the most recent version of every major browser (Chrome, Internet Explorer 10, Firefox, Opera, Safari); browsers without support will continue to render everything as they had before. This plugin adds the transitions (eye candy) to all `<a>` (link), `<li>` (list item, usually used in navigation menus), `<img>` (image), and `<input>` (form field and button) tags that have a hover or focus state defined (for example, if links change color when the mouse hovers over them). Other "buttons", form elements, and WordPress-specific selectors are also targeted. Transitions are between .2 and .3 seconds in duration, so they shouldn't cross the line between nice and distracting; however, depending on the colors used in your theme, the transitions may not be noticeable.
+This plugin automatically adds CSS3 transitions to your website/blog. Links, etc. get animated transitions between their normal and hover states. This plugin adds the transitions to all `<a>` (link), `<li>` (list item, usually used in navigation menus), `<img>` (image), and `<input>` (form field and button) tags that have a hover or focus state defined (for example, if links change color when the mouse hovers over them). Transitions are between .2 and .3 seconds in duration, so they shouldn't cross the line between nice and distracting; however, depending on the colors used in your theme, the transitions may not be noticeable.
 
 **This plugin is not for developers!**. If you're a developer and you want to add transitions to your site, just use the following css on any elements you want to add a transition to: `transition: .2s all ease;`. The values are duration (in s = seconds or ms = milliseconds), property ("all" usually works if you don't know what you're doing or want everything to transition), timing function (just use ease if you're unsure).
 
@@ -33,6 +33,10 @@ First, make sure you know what the transitions look like (and you need to be usi
 For simplicity's sake, no settings page is included. While there are a few potential options, I don't feel that they would be worth the extra bloat of a settings page. If you would like to make adjustments (such as changing the animation duration), you may do so by editing the plugin's php file. 
 
 == Changelog ==
+= 1.4 =
+* Remove transitions from the admin, since they are built into the WordPress 3.8 redesign.
+* 
+
 = 1.3 =
 * Introduce improved animation timing function (cubic-bezier(0.64,0.20,0.02,0.35))
 * Remove -moz-, -ms-, and -o- browser prefixes. -webkit- is still required for Safari and older Android, but all other major browsers now support unprefixed transitions.
