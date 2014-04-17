@@ -2,7 +2,7 @@
 Contributors: celloexpressions
 Tags: css3, transitions, eye candy, ui, effects, smooth, automatic, auto, animate, animations
 Requires at least: 3.0
-Tested up to: 3.6
+Tested up to: 3.9
 Stable tag: 1.3
 Description: Automatically adds CSS3 transitions to your website/blog and the WordPress admin. Elements with hover/active/focus states get animated transitions.
 License: GPLv2
